@@ -18,17 +18,17 @@ spec:
         components:
           env:
             - name: TOTAL_CHAOS_DURATION
-              value: "50"
+              value: "1m"
             - name: CHAOS_INTERVAL
-              value: "50"
+              value: "30"
             - name: USERS
-              value: "1"
+              value: "100"
             - name: HOST
-              value: ""
+              value: "http://ec2-3-125-4-65.eu-central-1.compute.amazonaws.com:5005"
             - name: LOAD_TYPE
               value: "load" 
             - name: SPAWN_RATE
-              value: "1"
+              value: "10"
             - name: RESPONSE_TYPE
               value: "token"
             - name: CLIENT_ID  
@@ -42,7 +42,7 @@ spec:
                   name: load.credentials
                   key: client_secret
             - name: CM_FILE
-              value: "/tmp/demo/config.py"
+              value: "/tmp/get/config.py"
             - name: GRANT_TYPE
               value: "client_credentials"
             - name: NODE_NAMES  
@@ -50,6 +50,6 @@ spec:
             - name: REPLICA
               value: "1"
             - name: LOAD_IMAGE 
-              value: ""
+              value: "kaleoum/kgh-load:test-tools"
         probe: []
   annotationCheck: "false"
