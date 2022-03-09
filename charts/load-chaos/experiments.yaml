@@ -81,10 +81,7 @@ spec:
 
       - name: CLIENT_SECRET
         value: ''
-      
-      - name: GRANT_TYPE
-        value: 'client_credentials'
-
+        
       - name: NODE_NAMES  
         value: ''
 
