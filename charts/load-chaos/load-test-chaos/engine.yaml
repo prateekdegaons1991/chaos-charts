@@ -31,16 +31,6 @@ spec:
               value: "10"
             - name: RESPONSE_TYPE
               value: "token"
-            - name: CLIENT_ID  
-              valueFrom:
-                secretKeyRef:
-                  name: load.credentials
-                  key: client_id
-            - name: CLIENT_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: load.credentials
-                  key: client_secret
             - name: CM_FILE
               value: "/tmp/get/config.py"
             - name: GRANT_TYPE
